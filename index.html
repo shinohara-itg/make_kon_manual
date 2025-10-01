@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>KON下書きアプリ マニュアル</title>
+  <style>
+    body {
+      font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+      line-height: 1.8;
+      margin: 40px;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 1.8em;
+      color: #444;
+    }
+    h2 {
+      margin-top: 40px;
+      border-left: 6px solid #0078D7;
+      padding-left: 10px;
+      font-size: 1.4em;
+    }
+    img {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 20px 0;
+      max-width: 100%;
+    }
+    .caption {
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KON下書きアプリのマニュアル</h1>
+    <div>2025年10月1日版</div>
+  </header>
+
+  <h2>解説</h2>
+  <p>企画書や実施計画書を作成する際のキックオフノートの下書きをするアプリです。</p>
+
+  <h2>事前に準備してもらうもの</h2>
+  <ul>
+    <li>オリエンでのメモや引合連絡の文面（テキストファイルにコピー）</li>
+    <li>イメージは後述</li>
+  </ul>
+
+  <h2>手順1：オリエン議事録をアップロード</h2>
+  <p>「Browse files」ボタンでテキストファイルを読み込みます。個人情報が含まれる場合は自動で削除されます。</p>
+  <img src="mekekon_manual1.png" alt="mekekon_manual1">
+  <div class="caption">手順1の画面イメージ</div>
+
+  <h2>アップロードできるものの例</h2>
+  <p>手書きの議事録、問い合わせシートのコピペ、オンライン会議の発言録など</p>
+  <img src="mekekon_manual2.png" alt="mekekon_manual2">
+  <div class="caption">アップロード例（議事録・問い合わせシート）</div>
+
+  <h2>手順2：KONを下書き生成</h2>
+  <p>「KONを下書き」ボタンを押すと、OpenAIがテキストファイルをもとに下書きを作成します。</p>
+  <img src="mekekon_manual3.png" alt="mekekon_manual3">
+  <div class="caption">下書き生成の画面イメージ</div>
+
+  <h2>補足</h2>
+  <p>生成された文書がイメージに近ければ採用、少し違えば修正して利用してください。</p>
+</body>
+</html>
